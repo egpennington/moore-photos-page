@@ -1,0 +1,199 @@
+/* css for mike's photo site */
+body {
+    padding: 0;
+    margin: 1rem 4rem 1rem 4rem;
+    background-color: #17141d;
+    color: white;
+    font-family: serif, sans-serif, monospace;
+}
+/* adding animated cards */
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 2px 0 2px 2px;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#name {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#logo1 {
+    border-radius: 100px;
+    margin: 2em;
+}
+#logo2 {
+    border: 1px solid #000;
+    border-radius: 20px;
+    float: right;
+    margin: 2em;
+}
+/* adding animated cards */
+.card-list {
+    display: flex;
+    padding: 3rem;
+    overflow-x: scroll;
+}
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 450px;
+    width: 350px;
+    min-width: 200px;
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: #17141d;
+    box-shadow: -2rem 0 3rem #000;
+    transition: .3s;
+}
+.card:hover {
+    transform: translateY(-3rem);
+}
+.card:hover~.card {
+    transform: translateX(100px);
+}
+.card:not(:first-child) {
+    margin-left: -100px;
+}
+.name {
+    text-align: center;
+    font-size: 4em;
+    
+}
+#quote {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.3em;
+    /*color: #ffec94;*/
+    /*color: #9Bd1fa;*/
+    color: #b0e57c;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+.btn {
+    padding: 0 20px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 50px;
+    background: transparent;
+    cursor: pointer;
+}
+#submit {
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+    margin: .5em;
+    border: 0;
+    background-color: #f1c40f;
+}
+#email {
+    max-width: 275px;
+    height: 20px;
+    width: 100%;
+    padding: 2px;
+}
+.container2 {
+    display: flex;
+    flex-direction: row;
+    height: 3em;
+    justify-content: space-around;
+    align-items: center;
+}
+a {
+    color: white;
+}
+.link {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 0 .5em .5em .5em;
+    height: 50px;
+    text-align: center;
+}
+#pricing {
+    margin: 30px 30px 30px 30px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.section1 {
+    height: 200px;
+    width: 400px;
+    box-shadow: 4px 4px 12px 2px #0ff;
+    text-align: center;
+    border-radius: 5px;
+}
+.level {
+    background-color: #ddd;
+    border-radius: 5px;
+    color: black;
+    padding: 15px 0;
+    width: 100%
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.section2 {
+    height: 200px;
+    width: 400px;
+    box-shadow: 4px 4px 12px 2px #0ff;
+    text-align: center;
+    border-radius: 5px;
+}
+.section3 {
+    height: 200px;
+    width: 400px;
+    box-shadow: 4px 4px 12px 2px #0ff;
+    text-align: center;
+    border-radius: 5px;
+}
+
+    
+    
+    
+    
+/*This code gave a really cool "glow" look to the cards, but would not animate
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #17141d;
+    color: white;
+    font-family: serif, sans-serif, monospace;
+}
+.card-list {
+    display: flex;
+}
+.card {
+    background: #000;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-left: -3rem;
+    box-shadow: 4px 4px 12px 2px;
+    transition: 2s;
+.card:hover {
+    transform: translateY(-4rem);
+}
+.card:hover~.card {
+    transform: translateX(4rem);
+}
+*/
